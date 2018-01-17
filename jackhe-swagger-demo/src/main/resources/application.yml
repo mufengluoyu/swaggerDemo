@@ -1,0 +1,7 @@
+server:
+  port: 1201
+spring:
+  application:
+    name: jackhe-swagger-demo
+  level:
+    root: INFO
