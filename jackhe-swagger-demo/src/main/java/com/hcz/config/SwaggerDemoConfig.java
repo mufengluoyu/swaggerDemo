@@ -52,7 +52,7 @@ public class SwaggerDemoConfig {
 		return new ApiInfoBuilder()
                 .title("测试接口1.0.0")  //设置文档的标题
                 .description("swagger测试文档") //设置文档的描述
-                .termsOfServiceUrl("http://www.baidu.com//")//设置文档的License信息->1.3 License information
+                .termsOfServiceUrl("http://localhost:80/")//设置文档的License信息->1.3 License information(官方规则)
                 .version("1.0")//设置文档的版本信息
                 .build();
 	}

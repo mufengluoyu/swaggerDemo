@@ -20,9 +20,9 @@ public class TestVoResponse implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@ApiModelProperty(required=true,value="测试id")
 	private String id;
-	@ApiModelProperty(required=true,dataType="yyyy-MM-dd hh:mm:ss",value="2018-1-15 11:50:31")
+	@ApiModelProperty(required=true,dataType="Date",value="创建时间")
 	private Date createTime;
-	@ApiModelProperty(required=true,value="12")
+	@ApiModelProperty(required=true,value="登入数量")
 	private Integer num;
 	@ApiModelProperty(required=true,value="测试名字")
 	private String name;
