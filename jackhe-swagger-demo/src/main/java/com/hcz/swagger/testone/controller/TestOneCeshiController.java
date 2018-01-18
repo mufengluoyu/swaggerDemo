@@ -15,6 +15,7 @@ import com.hcz.swagger.testone.vo.TestVoResponse;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
 /**
@@ -28,10 +29,12 @@ import io.swagger.annotations.ApiParam;
 public class TestOneCeshiController{
 	
 	@RequestMapping(value="/findName/{name}",method=RequestMethod.GET)
+	@ApiOperation(value="查找名字")
 	public String findName(@ApiParam(value="名字",defaultValue="默认名字",required=true) @PathVariable(name="name")String name){
 		return "testOne："+name;
 	}
 	@RequestMapping(value="/findObj",method=RequestMethod.POST)
+	@ApiOperation(value="查找对象")
 	public TestVoResponse findObj(@RequestBody @ApiParam(name="用户对象",value="传入json格式",required=true) TestVoRequest re){
 		TestVoResponse response = new TestVoResponse();
 		response.setCreateTime(new Date());
